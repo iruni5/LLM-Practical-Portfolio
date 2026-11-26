@@ -65,7 +65,7 @@ This section documents the practical activities completed during Laboratory 01, 
 ### 07. Visualisations (Confusion Matrix & Loss Curve)
 ![Confusion Matrix](screenshots/07.1-confusion-matrix.png)
 
-![Training and Validation Loss](screenshots/08-loss-graph.png)
+![Training and Validation Loss](screenshots/07.2-loss-graph.png)
 
 ### 08. Sample Predictions
 ![Sample Predictions](screenshots/08.1-sample-predictions.png)
