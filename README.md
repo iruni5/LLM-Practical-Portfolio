@@ -1,27 +1,40 @@
-# LLM-Practical-Portfolio
-Individual practical portfolio for PUSL3205 – Large Language Models and Generative AI.
+# PUSL3205 – Large Language Models and Generative AI
 
-# PUSL3205 – LLM Practical Portfolio
+## About This Portfolio
+
+This repository contains the individual practical portfolio developed as part of the PUSL3205 – Large Language Models and Generative AI module.
+
+The portfolio documents the practical laboratory activities, implementations, experiments, results, observations and learning outcomes gained throughout the module.
+
+## Practical Activities
+
+| Laboratory | Topic | Status |
+|---|---|---|
+| Lab 01 | Machine Learning | Pending |
+| Lab 02 | LLMs in Everyday Life | Pending |
+| Lab 03 | Tiny Transformer | Pending |
+| Lab 04 | Fine-Tuning | Pending |
+| Lab 05 | Retrieval-Augmented Generation (RAG) | Pending |
+| Lab 06 | AI Agents | Pending |
+
+## Portfolio Structure
+
+Each laboratory section may contain:
+
+- Laboratory documentation
+- Implementation details
+- Code and notebooks
+- Screenshots and evidence
+- Results and outputs
+- Observations
+- Learning outcomes
+
+## Final Reflection
+
+A final reflection will be included to summarise the knowledge, skills, challenges and experiences gained throughout the practical activities.
 
 ## Module
-Large Language Models and Generative AI
 
-## Purpose
-This repository documents the practical laboratory activities
-completed as part of the PUSL3205 module.
-
-The portfolio includes implementations, experiments, outputs,
-screenshots, observations, and learning reflections related to
-Large Language Models and Generative AI.
-
-## Laboratory Activities
-
-- Lab 01 – Machine Learning
-- Lab 02 – LLMs in Everyday Life
-- Lab 03 – Tiny Transformer
-- Lab 04 – Fine-Tuning
-- Lab 05 – Retrieval-Augmented Generation (RAG)
-- Lab 06 – AI Agents
-
-## Author
-Iruni Weerakkody
+**Module Code:** PUSL3205  
+**Module Name:** Large Language Models and Generative AI  
+**Assessment:** Individual Practical Portfolio
