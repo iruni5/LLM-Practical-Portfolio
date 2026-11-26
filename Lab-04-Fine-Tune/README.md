@@ -21,9 +21,17 @@ Fine-tune a small instruction-tuned causal language model (`Qwen/Qwen2.5-0.5B-In
   * Original Model BLEU Score: `[insert original BLEU]`
   * Fine-Tuned Model BLEU Score: `[insert fine-tuned BLEU]`
 * **Screenshots:**
+  1. Environment & GPU Verification
+  Confirms allocation of the NVIDIA Tesla T4 GPU (14.56 GB VRAM) in Google Colab.
   * ![GPU Check](screenshots/01_gpu_check.png)
+  2. Model Loading & LoRA Trainable Parameters
+  Shows Qwen/Qwen2.5-0.5B-Instruct loaded with PEFT LoRA configured (4,399,104 trainable parameters    — 0.8826%).
   * ![Model and LoRA Parameters](screenshots/02_model_and_lora_params.png)
+  3. SFTTrainer Training Progress & Loss Table
+  Displays the 15-epoch (120-step) training progression as cross-entropy loss converges from 2.600     to 0.059.
   * ![Training Progress](screenshots/03_training_progress.png)
+  4. Base vs. Fine-Tuned Comparison & BLEU Evaluation
+  Side-by-side comparison table contrasting base model hallucinations/refusals against accurate  ByteForge domain responses, achieving a BLEU score jump from 3.44 to 100.00.
   * ![Comparison Table and BLEU Score](screenshots/04_comparison_and_bleu.png)
 
 ## Observations
