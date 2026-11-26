@@ -43,27 +43,33 @@ This section documents the practical activities completed during Laboratory 01, 
 ![Dataset Loading](screenshots/01-dataset-loading.png)
 
 ### 02. Exploratory Data Analysis
-![Exploratory Data Analysis](screenshots/02-data-exploration.png)
+![Exploratory Data Analysis](screenshots/02.1-data-exploration.png)
+![Exploratory Data Analysis](screenshots/02.2-data-exploration.png)
 
 ### 03. Data Preprocessing & Tokenization
-![Data Preprocessing](screenshots/03-data-preprocessing.png)
+![Data Preprocessing](screenshots/03.1-data-preprocessing.png)
+![Data Preprocessing](screenshots/03.2-data-preprocessing.png)
 
 ### 04. Neural Network Architecture
-![Model Architecture](screenshots/04-model-architecture.png)
+![Model Architecture](screenshots/04.1-model-architecture.png)
+![Model Architecture](screenshots/04.2-model-architecture.png)
 
 ### 05. Model Training
 ![Model Training](screenshots/05-model-training.png)
 
 ### 06. Model Evaluation
-![Model Evaluation](screenshots/06-model-evaluation.png)
+![Model Evaluation](screenshots/06.1-model-evaluation.png)
+![Model Evaluation](screenshots/06.2-model-evaluation.png)
+![Model Evaluation](screenshots/06.3-model-evaluation.png)
 
 ### 07. Visualisations (Confusion Matrix & Loss Curve)
-![Confusion Matrix](screenshots/07-confusion-matrix.png)
+![Confusion Matrix](screenshots/07.1-confusion-matrix.png)
 
 ![Training and Validation Loss](screenshots/08-loss-graph.png)
 
 ### 08. Sample Predictions
-![Sample Predictions](screenshots/09-sample-predictions.png)
+![Sample Predictions](screenshots/08.1-sample-predictions.png)
+![Sample Predictions](screenshots/08.2-sample-predictions.png)
 
 ---
 
