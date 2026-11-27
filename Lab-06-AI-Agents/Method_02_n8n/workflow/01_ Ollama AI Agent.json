@@ -1,0 +1,228 @@
+{
+  "name": "Lab 06 - Ollama AI Agent",
+  "nodes": [
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1.5,
+      "position": [
+        0,
+        0
+      ],
+      "id": "9c86fe64-f6cc-422c-a7a2-fe0d77eb9c73",
+      "name": "When chat message received",
+      "webhookId": "f2edd02e-c99d-4706-9f97-8741fc6e5058"
+    },
+    {
+      "parameters": {
+        "options": {
+          "systemMessage": "GMAIL FULL MESSAGE RETRIEVAL:\n\n1. When a user asks to read, retrieve, or summarize a specific\n   email, first use Gmail Get Many to identify the email.\n\n2. Extract the actual message ID from the Gmail Get Many result.\n\n3. Use Gmail Get Message to retrieve the individual email.\n\n4. Gmail Get Message returns detailed email information.\n   When Simplify is disabled, use the actual email body from\n   the returned text or HTML fields.\n\n5. Summarize the actual email body, not merely its snippet.\n\n6. Never invent email content or message IDs.\n\n7. Do not ask the user to provide an email ID when it is\n   available from the Gmail Get Many results.\n\n8. Do not send, delete, archive or modify emails."
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        224,
+        0
+      ],
+      "id": "f622ad31-f882-4ec6-a917-d68a502aaba1",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "model": "llama3.2:3b",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOllama",
+      "typeVersion": 1,
+      "position": [
+        96,
+        208
+      ],
+      "id": "80e9051d-2633-409c-876b-0d49092ba99a",
+      "name": "Ollama Chat Model"
+    },
+    {
+      "parameters": {},
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.4,
+      "position": [
+        240,
+        208
+      ],
+      "id": "832dee15-53e6-49e5-9525-e4019dba3e3e",
+      "name": "Simple Memory"
+    },
+    {
+      "parameters": {
+        "descriptionType": "manual",
+        "toolDescription": "Create a new event in the user's Google Calendar. Use the event title, start date and time, end date and time, description and location provided by the user. Ensure that the event details have been confirmed by the user before creating the event. Do not invent missing event details.",
+        "calendar": {
+          "__rl": true,
+          "value": "YOUR_GOOGLE_CALENDAR",
+          "mode": "list",
+          "cachedResultName": "YOUR_GOOGLE_CALENDAR"
+        },
+        "start": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Start', ``, 'string') }}",
+        "end": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('End', ``, 'string') }}",
+        "additionalFields": {
+          "description": "AI",
+          "location": "AI",
+          "summary": "AI"
+        }
+      },
+      "type": "n8n-nodes-base.googleCalendarTool",
+      "typeVersion": 1.4,
+      "position": [
+        512,
+        128
+      ],
+      "id": "0569f5d6-de84-4ac7-ba3b-040277a91042",
+      "name": "Create an event in Google Calendar1"
+    },
+    {
+      "parameters": {
+        "operation": "getAll",
+        "calendar": {
+          "__rl": true,
+          "value": "YOUR_GOOGLE_CALENDAR",
+          "mode": "list",
+          "cachedResultName": "YOUR_GOOGLE_CALENDAR"
+        },
+        "returnAll": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleCalendarTool",
+      "typeVersion": 1.4,
+      "position": [
+        384,
+        208
+      ],
+      "id": "0b482612-a9f3-4346-88fc-101042df1013",
+      "name": "Get many events in Google Calendar"
+    },
+    {
+      "parameters": {
+        "operation": "getAll",
+        "limit": 5,
+        "filters": {}
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.2,
+      "position": [
+        592,
+        0
+      ],
+      "id": "5fd525f0-2c63-43c6-b765-f83e68b54866",
+      "name": "Get many messages"
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "messageId": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Message_ID', ``, 'string') }}",
+        "simple": false,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.gmailTool",
+      "typeVersion": 2.2,
+      "position": [
+        768,
+        224
+      ],
+      "id": "31c846b0-c543-44cc-b569-add752412c8c",
+      "name": "Get a message in Gmail"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When chat message received": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ollama Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Simple Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Create an event in Google Calendar1": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get many events in Google Calendar": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent": {
+      "main": [
+        [
+          {
+            "node": "Get many messages",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get a message in Gmail": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "nodeGroups": [],
+  "tags": []
+}
