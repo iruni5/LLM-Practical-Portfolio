@@ -2,7 +2,7 @@
 # AI Agent Integrations
 
 ## 1. Introduction
----
+
 
 The n8n AI Agent was connected to Google Calendar and Gmail to explore the use of external applications as tools within an AI agent workflow.
 
@@ -12,7 +12,6 @@ These integrations allow the agent to retrieve information from connected servic
 
 ## 2. Google Calendar Integration
 
----
 
 Google Calendar was integrated into the AI agent using Google Calendar nodes.
 
@@ -37,7 +36,7 @@ The retrieved information is used to answer relevant user questions.
 ---
 
 ## 3. Gmail Integration
----
+
 
 Gmail was integrated into the AI agent using Gmail nodes.
 
@@ -62,7 +61,7 @@ Gmail was integrated into the AI agent using Gmail nodes.
 ---
 
 ## 4. Authentication
----
+
 
 Google Calendar and Gmail integrations require OAuth authentication.
 
@@ -71,7 +70,7 @@ Credentials are configured within n8n and are not included in the exported workf
 ---
 
 ## 5. Limitations
----
+
 
 - Access depends on the permissions granted during OAuth authentication.
 
