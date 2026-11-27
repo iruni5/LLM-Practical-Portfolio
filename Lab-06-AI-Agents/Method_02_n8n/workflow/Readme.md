@@ -1,6 +1,6 @@
-##Method 02 – AI Agent Implementation Using n8n
+## Method 02 – AI Agent Implementation Using n8n
 
-###Overview
+### Overview
 
 This implementation explores the development of an AI-powered agent using n8n, a visual workflow automation platform.
 
@@ -8,21 +8,21 @@ The AI agent was developed using Ollama as the local Large Language Model (LLM) 
 
 A separate simple workflow was also developed to understand the fundamental workflow creation and execution process in n8n.
 
-###Objectives
+### Objectives
 
-Understand visual workflow automation using n8n.
+- Understand visual workflow automation using n8n.
 
-Develop an AI agent using a locally hosted LLM.
+- Develop an AI agent using a locally hosted LLM.
 
-Connect an AI agent with external applications.
+- Connect an AI agent with external applications.
 
-Implement conversational memory.
+- Implement conversational memory.
 
-Explore tool-based interactions with Google Calendar and Gmail.
+- Explore tool-based interactions with Google Calendar and Gmail.
 
-Export workflows for documentation and reuse.
+- Export workflows for documentation and reuse.
 
-###Technology Stack
+### Technology Stack
 
 Technology | Purpose
 n8n | Workflow automation and AI agent orchestration
@@ -33,7 +33,7 @@ Google Calendar API | Calendar event retrieval and creation
 Gmail API | Email retrieval
 Docker | Running n8n in a containerized environment
 
-###Project Structure
+### Project Structure
 
 Method_02_n8n/
 │
@@ -45,55 +45,55 @@ Method_02_n8n/
 │
 └── Readme.md
 
-###Implementations
+### Implementations
 
-####1. Basic n8n Workflow
+#### 1. Basic n8n Workflow
 
 A simple workflow was created using a Manual Trigger and Edit Fields node.
 
 This implementation demonstrates:
 
-Manual workflow execution.
+- Manual workflow execution.
 
-Node-based workflow design.
+- Node-based workflow design.
 
-Data assignment.
+- Data assignment.
 
-Workflow execution and output inspection.
+- Workflow execution and output inspection.
 
-####2. Ollama AI Agent
+#### 2. Ollama AI Agent
 
 An AI agent was created using n8n and Ollama.
 
 The workflow incorporates:
 
-Chat Trigger.
+- Chat Trigger.
 
-AI Agent.
+- AI Agent.
 
-Ollama Chat Model.
+- Ollama Chat Model.
 
-Simple Memory.
+- Simple Memory.
 
-Google Calendar tools.
+- Google Calendar tools.
 
-Gmail tools.
+- Gmail tools.
 
 The agent was designed to interact with connected services through tools while maintaining conversational context.
 
-###Documentation
+### Documentation
 
 Detailed implementation information, configuration instructions, testing evidence, and troubleshooting information are available in the documentation/ directory.
 
-###Workflow Files
+### Workflow Files
 
 The exported workflows are available in the workflow/ directory.
 
-###Screenshots
+### Screenshots
 
 Screenshots demonstrating the setup, workflow configuration, integrations, and testing are available in the screenshots/ directory.
 
-###Notes
+### Notes
 
 - Ollama must be installed and configured separately.
 
