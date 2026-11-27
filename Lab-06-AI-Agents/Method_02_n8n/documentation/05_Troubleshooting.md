@@ -3,12 +3,12 @@
 # Troubleshooting
 
 ## 1. Introduction
----
+
 
 This document records common configuration and execution issues encountered during the development of the n8n AI Agent.
 
 ## 2. n8n and Ollama Connection
----
+
 
 ### Issue
 
@@ -23,7 +23,7 @@ http://host.docker.internal:11434
 The Ollama service must be running before the connection is tested.
 
 ## 3. Ollama Model Availability
----
+
 
 ### Issue
 
@@ -34,7 +34,7 @@ The selected model may not be available locally.
 Verify that the model has been downloaded and is available through Ollama.
 
 ## 4. Google Authentication
----
+
 
 ### Issue
 
@@ -49,7 +49,7 @@ Google Calendar or Gmail operations may fail if authentication is missing or inv
 - Check the permissions granted to the integration.
 
 ## 5. Workflow Import
----
+
 
 ### Issue
 
@@ -68,7 +68,7 @@ Imported workflows may not execute immediately.
 - Execute the workflow and inspect the execution logs.
 
 ## 6. AI Agent Responses
----
+
 
 ### Issue
 
@@ -87,7 +87,7 @@ The AI agent may not select the expected tool or may generate an incorrect respo
 - Verify important information independently.
 
 ## 7. Conclusion
----
+
 
 Troubleshooting helped identify the importance of correct service configuration, authentication, connectivity, and workflow design.
 
