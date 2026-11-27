@@ -1,17 +1,20 @@
 ---
 
 ## System Overview – n8n AI Agent
+---
 
 ### 1. Introduction
-
+---
 This implementation explores the development of an AI-powered conversational agent using n8n and Ollama.
 
 The agent was designed to interact with users through a chat interface and utilize connected tools to retrieve information from Google Calendar and Gmail.
 
 A conversational memory component was incorporated to allow the agent to retain context during interactions.
 
-### 2. System Objectives
+---
 
+### 2. System Objectives
+---
 - Develop an AI agent using a visual workflow automation platform.
 
 - Utilize a locally hosted Large Language Model.
@@ -23,9 +26,11 @@ A conversational memory component was incorporated to allow the agent to retain 
 - Explore tool-based AI interactions.
 
 - Understand the components of an AI agent workflow.
+  
+---
 
 ### 3. System Components
-
+---
 | `Component`| `Description` |
 | ---------- | ----------- |
 | `Chat Trigger` | Initiates the workflow when a chat message is received. |
@@ -35,8 +40,10 @@ A conversational memory component was incorporated to allow the agent to retain 
 | `Google Calendar` | Enables the agent to retrieve calendar events and create events. |
 | `Gmail` | Enables the agent to retrieve email information. |
 
-### 4. System Workflow
+---
 
+### 4. System Workflow
+---
 The system operates through the following process:
 
 1. A user submits a message through the chat interface.
@@ -57,12 +64,18 @@ The system operates through the following process:
 
 9. A response is provided to the user.
 
+---
 ### 5. Architecture
+---
 
 The system consists of a chat interface, AI orchestration layer, local LLM, memory component, and external service integrations.
 
 The AI Agent acts as the central component connecting the language model with available tools.
 
+---
+
 ### 6. Workflow Files
+
+----
 
 The exported n8n workflows are available in the workflow/ directory.
