@@ -34,17 +34,6 @@ A separate simple workflow was also developed to understand the fundamental work
 | `Gmail API` | Email retrieval |
 | `Docker` | Running n8n in a containerized environment |
 
-### Project Structure
-
-Method_02_n8n/
-│
-├── documentation/
-│
-├── screenshots/
-│
-├── workflow/
-│
-└── Readme.md
 
 ### Implementations
 
