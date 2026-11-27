@@ -21,7 +21,7 @@ Design, implement, and evaluate a local Retrieval-Augmented Generation (RAG) and
 ## Results and Evidence
 
 - **Document Indexing & Retrieval:** Successfully ingested reference PDF documents into ChromaDB (`university_knowledge`) using `qwen3-embedding:0.6b` and retrieved relevant context chunks for academic module and handbook queries.
-- **Grounded Generation & Memory Execution:** Verified that `llama3.2:3b` produces grounded answers strictly from retrieved chunks and accurately stores/recalls user facts in SQLite during agent sessions.
+- **Grounded Generation :** Verified that `llama3.2:3b` produces grounded answers strictly from retrieved chunks and accurately stores/recalls user facts in SQLite during agent sessions.
 
 ### Screenshots
 
@@ -32,13 +32,13 @@ Design, implement, and evaluate a local Retrieval-Augmented Generation (RAG) and
 ![Document Ingestion and Chunks](screenshots/02-ingestion-chunks.png)
 
 #### 3. RAG Retrieval & Grounded Answer
-![RAG Query and Grounded Answer](screenshots/03-rag-query-answer.png)
+![RAG Query and Grounded Answer](screenshots/03.1-rag-query-answer.png)
+![RAG Query and Grounded Answer](screenshots/03.2-rag-query-answer.png)
+![RAG Query and Grounded Answer](screenshots/03.3-rag-query-answer.png)
 
 #### 4. Document & Advanced RAG Explorer
 ![Advanced RAG and Knowledge Graph Explorer](screenshots/04-rag-graph-or-rerank.png)
 
-#### 5. Memory & Agent Tool Execution
-![Agent Memory and Tool Execution](screenshots/05-agent-memory-tools.png)
 
 ## Observations
 
