@@ -33,27 +33,27 @@ A conversational memory component was incorporated to allow the agent to retain 
 | `Google Calendar` | Enables the agent to retrieve calendar events and create events. |
 | `Gmail` | Enables the agent to retrieve email information. |
 
-4. System Workflow
+### 4. System Workflow
 
 The system operates through the following process:
 
-1.A user submits a message through the chat interface.
+1. A user submits a message through the chat interface.
 
-2.The Chat Trigger initiates the workflow.
+2. The Chat Trigger initiates the workflow.
 
-3.The AI Agent receives the user message.
+3. The AI Agent receives the user message.
 
-4.The Ollama Chat Model processes the request.
+4. The Ollama Chat Model processes the request.
 
-5.The agent uses conversational memory when relevant.
+5. The agent uses conversational memory when relevant.
 
-6.If necessary, the agent selects an appropriate tool.
+6. If necessary, the agent selects an appropriate tool.
 
-7.The selected tool retrieves information or performs an action.
+7. The selected tool retrieves information or performs an action.
 
-8.The AI Agent processes the returned information.
+8. The AI Agent processes the returned information.
 
-9.A response is provided to the user.
+9. A response is provided to the user.
 
 ### 5. Architecture
 
