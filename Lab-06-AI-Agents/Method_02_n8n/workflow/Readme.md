@@ -24,14 +24,14 @@ A separate simple workflow was also developed to understand the fundamental work
 
 ### Technology Stack
 
-Technology | Purpose
-n8n | Workflow automation and AI agent orchestration
-Ollama | Local LLM execution
-Llama 3.2:3b | Language model used by the agent
-Simple Memory | Maintaining conversational context
-Google Calendar API | Calendar event retrieval and creation
-Gmail API | Email retrieval
-Docker | Running n8n in a containerized environment
+|Technology | Purpose|
+|n8n | Workflow automation and AI agent orchestration|
+|Ollama | Local LLM execution|
+|Llama 3.2:3b | Language model used by the agent|
+|Simple Memory | Maintaining conversational context|
+|Google Calendar API | Calendar event retrieval and creation|
+|Gmail API | Email retrieval|
+|Docker | Running n8n in a containerized environment|
 
 ### Project Structure
 
