@@ -37,9 +37,7 @@ The assistant receives user queries through the chat interface. The AI Agent pro
 - [x] Google Calendar event retrieval
 - [x] Google Calendar event creation
 - [x] Gmail email retrieval – Get Many
-- [ ] Gmail individual email retrieval testing
-- [ ] Gmail draft functionality
-- [ ] Additional integrations and testing
+
 
 ## Evidence
 
