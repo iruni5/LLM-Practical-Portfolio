@@ -25,7 +25,7 @@ PackWise addresses this challenge by helping students organize their daily requi
 
 ## Project Documentation
 
-- [Project Overview](project-overview.md)
+- [Project Overview](discussion-summary.md)
 
 ## Screenshots
 
