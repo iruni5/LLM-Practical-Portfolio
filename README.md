@@ -11,11 +11,11 @@ The portfolio documents the practical laboratory activities, implementations, ex
 | Laboratory | Topic | Status |
 |---|---|---|
 | Lab 01 | Machine Learning | Completed |
-| Lab 02 | LLMs in Everyday Life | Pending |
+| Lab 02 | LLMs in Everyday Life | Completed |
 | Lab 03 | Tiny Transformer | Completed |
 | Lab 04 | Fine-Tuning | Completed |
 | Lab 05 | Retrieval-Augmented Generation (RAG) | Completed |
-| Lab 06 | AI Agents | Pending |
+| Lab 06 | AI Agents | Completed |
 
 ## Portfolio Structure
 
