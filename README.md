@@ -8,14 +8,20 @@ The portfolio documents the practical laboratory activities, implementations, ex
 
 ## Practical Activities
 
-| Laboratory | Topic | Status |
-|---|---|---|
-| Lab 01 | Machine Learning | Completed |
-| Lab 02 | LLMs in Everyday Life | Completed |
-| Lab 03 | Tiny Transformer | Completed |
-| Lab 04 | Fine-Tuning | Completed |
-| Lab 05 | Retrieval-Augmented Generation (RAG) | Completed |
-| Lab 06 | AI Agents | Completed |
+## Labs & Modules
+- **Lab 01:** Machine Learning foundations (`Lab-01-Machine-Learning`)
+- **Lab 02:** LLMs in everyday workflows (`Lab-02-LLM-Everyday-Life`)
+- **Lab 03:** Tiny Transformer exploration (`Lab-03-Tiny-Transformer`)
+- **Lab 04:** Fine-tuning workflows (`Lab-04-Fine-Tune`)
+- **Lab 05:** Retrieval-Augmented Generation pipeline (`Lab-05-RAG-Pipeline`)
+- **Lab 06:** AI Agents (`Lab-06-AI-Agents`)
+  - `Method_01_Python` — Local Python AI agent with Ollama, memory/RAG, and Google Calendar/Gmail tools
+  - `Method_02_n8n` — Workflow-based agent implementation
+  - `comparison` — Comparison between Method 01 and Method 02
+- **Final Reflection:** `Final-Reflection.md`
+
+## Repository Notes
+Local virtual environments (`.venv/`), caches, local databases, and OAuth secrets (`credentials.json`, `token.json`) are excluded via `.gitignore`.
 
 ## Portfolio Structure
 
