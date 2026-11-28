@@ -1,1 +1,9 @@
-
+langchain
+langchain-ollama
+langchain-chroma
+chromadb
+pyautogui
+pygetwindow
+psutil
+networkx
+pyperclip
